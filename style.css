@@ -1,0 +1,45 @@
+/* Configuración General */
+body {
+    background-color: #1a1a1a; /* Negro mate */
+    color: #e0e0e0; /* Gris muy claro para lectura fácil */
+    font-family: 'Georgia', serif; /* Una letra más elegante */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #d4af37; /* Dorado metálico */
+    text-align: center;
+}
+
+/* Diseño de los Platos */
+.plato {
+    background-color: #262626;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex; /* Ponemos imagen al lado del texto */
+    align-items: center;
+    border: 1px solid #333;
+}
+
+.plato img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* Para que la imagen no se deforme */
+}
+
+.info-plato {
+    padding: 20px;
+}
+
+/* El Ticket de la Cuenta */
+section:last-of-type {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    text-align: center;
+}

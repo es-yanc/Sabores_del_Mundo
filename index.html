@@ -6,54 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Las comidas mas deliciosas del mundo en un solo lugar."
+      content="Sabores del mundo: Una experiencia gastronómica internacional en un solo lugar. Descubre platos deliciosos de todo el mundo, preparados con ingredientes frescos y auténticos. ¡Ven a disfrutar de una aventura culinaria única!"
     />
-    <title>Sabores del Mundo Restaurante</title>
+    <title>Sabores del Mundo | Restaurante Gourmet</title>
+
+    <!-- Conexion con el archivo de Estilos (El traje del restaurante)-->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Sabores del Mundo</h1>
-    <p>Descubre los sabores más deliciosos del mundo en un solo lugar.</p>
+    <header>
+      <h1>Sabores del Mundo</h1>
+      <p class="subtitle">
+        Descubre los sabores más deliciosos del mundo en un solo lugar.
+      </p>
+    </header>
 
-    <h2>Nuestros Menús</h2>
-    <p>
-      Explora nuestra selección de platos internacionales preparados con los
-      ingredientes más frescos y sabrosos.
-    </p>
-    <ul>
-      <li>
-        <a href="https://www.google.com" target="_blank">Menú Ejecutivo</a>
-      </li>
-      <li>
-        <a href="https://www.google.com" target="_blank">Menú Degustación</a>
-      </li>
-    </ul>
+    <main>
+      <section id="presentacion">
+        <h2>Nuestros Menús</h2>
+        <p>
+          Explora nuestra selección de platos internacionales preparados con los
+          ingredientes más frescos y técnicas artesanales.
+        </p>
+        <nav>
+          <ul>
+            <li><a href="#" target="_blank">Menú Ejecutivo</a></li>
+            <li><a href="#" target="_blank">Menú Degustación</a></li>
+          </ul>
+        </nav>
+      </section>
 
-    <h2>Platos Destacados</h2>
-    <figure>
-      <a href="https://picsum.photos/300/200" target="_blank">
-        <img src="https://picsum.photos/300/200" alt="Plato Destacado" />
-      </a>
-      <figcaption>Plato Francés</figcaption>
-      <a href="https://picsum.photos/300/200" target="_blank">
-        <img src="https://picsum.photos/300/200" alt="Plato Italiano" />
-      </a>
-      <figcaption>Plato Italiano</figcaption>
-      <a href="https://picsum.photos/300/200" target="_blank">
-        <img src="https://picsum.photos/300/200" alt="Plato Japonés" />
-      </a>
-      <figcaption>Plato Japonés</figcaption>
-    </figure>
+      <section id="menu-gourmet">
+        <h2>Experiencias Internacionales</h2>
 
-    <hr />
-    <!-- Agregamos una línea divisoria para separar secciones -->
+        <!-- Plato 1: Francia -->
+        <article class="plato">
+          <img
+            src="https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?auto=format&fit=crop&w=400&q=80"
+            alt="Ratatouille Provenzal"
+          />
+          <div class="info-plato">
+            <h3>Ratatouille Provenzal (Francia)</h3>
+            <p>
+              Es un estofado tradicional de la región de Provenza. Consiste en
+              cocinar a fuego lento rodajas de calabacín, berenjena, cebolla,
+              tomate y pimientos, sazonado con hierbas provenzales como tomillo
+              y albahaca. Un plato colorido que resalta los sabores naturales de
+              la huerta mediterranea
+            </p>
+          </div>
+        </article>
 
-    <!-- NUEVA SECCION PARA EL DESCUENTO -->
+        <!-- Plato 2: Italia -->
+        <article class="plato">
+          <img
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80"
+            alt="Pizza Margherita"
+          />
+          <div class="info-plato">
+            <h3>Pizza Margherita (Italia)</h3>
+            <p>
+              El plato más icónico de la cocina napolitana. Se elanora sobre una
+              masa delgada y crujiente, cubierta con salsa de tomate, mozarella
+              y hojas de albahaca. Su belleza reside en la simplicidad y la alta
+              calidad de sus ingredientes frescos
+            </p>
+          </div>
+        </article>
 
-    <section>
-      <h2>Tu Cuenta</h2>
-      <p id="mensaje-cuenta">Calculando el total de tu cena...</p>
-      <h3 id="precio-final"></h3>
-    </section>
+        <!-- Plato 3: Japón -->
+        <article class="plato">
+          <img
+            src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=400&q=80"
+            alt="Sushi Tradicional"
+          />
+          <div class="info-plato">
+            <h3>Sushi Tradicional (Japón)</h3>
+            <p>
+              Comsiderado el plato japonés por excelencia. Su base es el arroz
+              sazonado con vinagre, que se combina con una variedad de pescados
+              o mariscos frescos, vegetales y alga nori. Presentada en formas
+              delicadas como nigiris y makis
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- SECCIÓN DE FACTURACIÓN (DÓNDE ACTÚA EL JAVA SCRIPT)-->
+      <section id="facturacion">
+        <h2>Resumen de tu Experiencia</h2>
+        <p id="mensaje-cuenta">Procesando el total de tu mesa...</p>
+        <h3 id="precio-final"></h3>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Sabores del Mundo - Experiencia Gastronómica</p>
+    </footer>
+
+    <!-- Conexión con el Cerebro Lógico (JavaScript) -->
     <script src="app.js"></script>
   </body>
 </html>
